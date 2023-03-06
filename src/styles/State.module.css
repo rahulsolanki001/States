@@ -1,0 +1,141 @@
+.backButton{
+    width: 8vw;
+    border-radius: 5px;
+    background-color: #0F0F0A;
+    color: #fff;
+    cursor: pointer;
+    margin-top: 5%;
+    margin-left: 5%;
+    transition: all 0.3s;
+    padding: 0.2em;
+}
+
+.backButton:hover{
+    
+    width: 10vw;
+}
+
+
+.container{
+    width: 90vw;
+    display: flex;
+    flex-direction: row;
+    margin-top: 10%;
+}
+
+.image img{
+    object-fit: cover;
+    border: 5px solid ghostwhite;
+    margin-left: 5em;
+    margin-top: 2em;
+    border-radius: 5px;
+    width: 400px;
+    height: 200px;
+}
+
+
+.content{
+    width: 60%;
+    margin-left: 5em;
+}
+
+.content h1{
+    font-size: 38px;
+    font-weight: 500;
+}
+
+.content div{
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+}
+
+.content p{
+    font-size: 18px;
+    width: 50%;
+}
+
+.content strong{
+    
+    font-size:20px;
+}
+
+#chart{
+    width: 50vw;
+    margin: 5%;
+    margin-left: 25%;
+    
+}
+
+#chart canvas{
+    background-color: #fff;
+}
+
+
+/*------------mobiles-----------*/
+@media screen and (max-width:500px)   {
+    .backButton{
+        width: 60vw;
+        margin-top: 20%;
+    }
+
+    .container{
+        flex-direction: column;
+    }
+
+    .container div{
+        width: 100%;
+    }
+
+    .image img{
+        margin-left: 1em;
+    }
+
+    .content{
+        margin-left: 1em;
+    }
+
+    .content div{
+        flex-direction: column;
+    }
+    .content p{
+        width: 100%;
+    }
+
+    #chart{
+        width: 97vw;
+        margin-left: 0%;
+    }
+
+   
+}
+
+/*----------------tablets-----------------*/
+@media screen and (min-width:500px) and (max-width:1000px) {
+    .backButton{
+        width: 30vw;
+    }
+
+    .container{
+        width: 100vw;
+    }
+
+
+    .image img{
+        margin-left: 1em;
+    }
+
+    .content{
+        margin-left: 1em;
+    }
+
+    #chart{
+        width: 97vw;
+        margin-left: 0%;
+    }
+}
+
+
+
+
+

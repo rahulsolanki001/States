@@ -1,0 +1,32 @@
+.regionDropdown{
+    width: 20vw;
+    margin-top: 2em;
+    margin-left: 4em;
+}
+
+.regionDropdown select{
+    width: 80%;
+    border-radius:5px ;
+    padding-top: 0.1em;
+    padding-bottom: 0.1em;
+    padding-left: 0.5em;
+    transition: all 0.5s;
+}
+
+
+/*---------------mobiles-----------*/
+
+@media screen and (max-width:500px) {
+    .regionDropdown{
+        width: 80vw;
+        margin-left: 3em;
+    }
+}
+
+/*----------------tablets-----------------*/
+@media screen and (min-width:500px) and (max-width:1000px) {
+ 
+    .regionDropdown{
+        width: 40vw;
+    }
+}
